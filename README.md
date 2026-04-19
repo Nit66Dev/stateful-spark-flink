@@ -54,13 +54,13 @@ This project implements a real-time analytics pipeline that simulates a subscrip
                     └──────┬──────────┬───────┘
                            │          │
              ┌─────────────▼──┐  ┌────▼──────────────┐
-             │  Spark         │  │  Apache Flink      │
-             │  Structured    │  │  (PyFlink Table    │
-             │  Streaming     │  │   API)             │
-             └──────┬─────────┘  └────────┬───────────┘
+             │  Spark         │  │  Apache Flink     │
+             │  Structured    │  │  (PyFlink Table   │
+             │  Streaming     │  │   API)            │
+             └──────┬─────────┘  └────────┬──────────┘
                     │                     │
              ┌──────▼─────────────────────▼───────────┐
-             │              MySQL 8.0                  │
+             │              MySQL 8.0                 │
              │  ┌──────────────────────────────────┐  │
              │  │  subscription_metrics (Spark)    │  │
              │  │  subscription_metrics_flink      │  │
